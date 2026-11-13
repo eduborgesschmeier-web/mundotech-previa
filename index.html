@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="pt-BR">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Mundo Tech | Assistência técnica em Caxias do Sul (prévia)</title>
+<meta name="description" content="Prévia de site para a Mundo Tech, assistência técnica em Caxias do Sul.">
+<meta name="theme-color" content="#05070C">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305070C'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%2335C6F4' stroke-width='2.5'/%3E%3Cpath d='M3 16h26' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E">
+<style>
+:root{--bg:#05070C;--pn:#0B0F17;--ln:rgba(255,255,255,.12);--fg:#fff;--mu:rgba(255,255,255,.66);--c:#35C6F4;--mono:ui-monospace,"Cascadia Mono",Consolas,Menlo,monospace}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--fg);font:17px/1.6 "Segoe UI",system-ui,-apple-system,Roboto,Arial,sans-serif}
+a{color:inherit;text-decoration:none}
+.w{max-width:1120px;margin:0 auto;padding:0 24px}
+.pv{background:var(--c);color:#05070C;font:600 13px/1 var(--mono);letter-spacing:.04em;text-align:center;padding:10px 16px}
+nav{position:sticky;top:0;z-index:50;background:rgba(5,7,12,.92);border-bottom:1px solid var(--ln)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:12px;font-weight:700;font-size:20px;letter-spacing:-.01em}
+.logo svg{width:32px;height:32px}.logo b{color:var(--c);font-weight:700}
+nav ul{display:flex;gap:32px;list-style:none;padding:0;color:var(--mu);font-size:15px}nav ul a:hover{color:var(--fg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--c);color:#05070C;font:inherit;font-weight:700;padding:14px 24px;border-radius:12px;border:0;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{background:#6ED8FA}.btn:active{transform:scale(.98)}
+.btn.o{background:transparent;color:var(--fg);border:1px solid var(--ln)}.btn.o:hover{border-color:var(--c)}
+.btn.sm{padding:10px 16px;font-size:15px}
+.hero{padding:88px 0 80px}
+.hero .w{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.tag{display:inline-flex;align-items:center;gap:10px;font:13px var(--mono);letter-spacing:.04em;color:var(--mu);text-transform:uppercase}
+.dot{width:8px;height:8px;border-radius:50%;background:#6b7280}.dot.on{background:var(--c)}
+h1{font-size:clamp(36px,5.2vw,60px);line-height:1.04;letter-spacing:-.03em;font-weight:700;margin:24px 0}
+h1 em{font-style:normal;box-shadow:inset 0 -.14em 0 var(--c)}
+.sub{color:var(--mu);font-size:19px;max-width:520px}
+.cta{display:flex;gap:16px;flex-wrap:wrap;margin-top:40px}
+.nums{display:flex;gap:40px;margin-top:48px;padding-top:24px;border-top:1px solid var(--ln);max-width:520px}
+.nums b{display:block;font-size:28px;font-weight:700;letter-spacing:-.02em;line-height:1.1}.nums span{color:var(--mu);font-size:13px}
+.art{background:var(--pn);border:1px solid var(--ln);border-radius:20px;padding:16px}
+.art svg{display:block;width:100%;height:auto}
+.art small{display:block;font:11.5px var(--mono);letter-spacing:.06em;color:var(--mu);text-transform:uppercase;padding:8px 8px 0}
+section{padding:96px 0;border-top:1px solid var(--ln)}
+.ey{font:13px var(--mono);color:var(--c);letter-spacing:.08em;text-transform:uppercase}
+h2{font-size:clamp(28px,4vw,42px);letter-spacing:-.025em;line-height:1.1;margin:16px 0;font-weight:700}
+.lead{color:var(--mu);max-width:600px}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:48px}
+.sv{background:var(--pn);border:1px solid var(--ln);border-radius:16px;overflow:hidden;transition:border-color .2s}
+.sv:hover{border-color:var(--c)}
+.sv svg{display:block;width:100%;height:160px;background:#070B12;border-bottom:1px solid var(--ln)}
+.sv div{padding:20px 24px 24px}
+.sv span{font:12px var(--mono);color:var(--c);letter-spacing:.06em}
+.sv h3{font-size:20px;font-weight:600;margin:6px 0 4px}.sv p{color:var(--mu);font-size:15px}
+.sv.w2{grid-column:span 2}.sv.w4{grid-column:1/-1}
+.proc{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;margin-top:16px}
+.steps{display:grid;gap:0}
+.st{border-top:1px solid var(--ln);padding:24px 0 24px 64px;position:relative}
+.st:last-child{border-bottom:1px solid var(--ln)}
+.st span{position:absolute;left:0;top:24px;font:14px var(--mono);color:var(--c)}
+.st h3{font-size:21px;margin-bottom:4px}.st p{color:var(--mu)}
+.os{background:var(--pn);border:1px solid var(--ln);border-radius:16px;padding:24px;font:14px var(--mono)}
+.os header{display:flex;justify-content:space-between;color:var(--mu);font-size:12px;letter-spacing:.08em;text-transform:uppercase;padding-bottom:16px;border-bottom:1px dashed var(--ln)}
+.os dl{display:grid;grid-template-columns:auto 1fr;gap:8px 24px;margin:16px 0}.os dt{color:var(--mu)}.os dd{margin:0;text-align:right}
+.trk{list-style:none;padding:16px 0 0;margin:0;border-top:1px dashed var(--ln)}
+.trk li{display:flex;align-items:center;gap:16px;padding:8px 0;color:var(--mu)}
+.trk i{width:16px;height:16px;border-radius:50%;border:2px solid var(--ln);flex:none}
+.trk li.ok{color:var(--fg)}.trk li.ok i{background:var(--c);border-color:var(--c)}.trk li.now{color:var(--c)}.trk li.now i{border-color:var(--c)}
+.os small{display:block;margin-top:16px;color:var(--mu);font-size:11.5px;letter-spacing:.04em}
+.q{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start;margin-top:48px}
+label{display:block;font:13px var(--mono);color:var(--mu);margin:16px 0 8px;letter-spacing:.04em;text-transform:uppercase}
+select,input,textarea{width:100%;background:var(--pn);border:1px solid var(--ln);border-radius:12px;color:var(--fg);padding:14px 16px;font:inherit;font-size:16px}
+select:focus,input:focus,textarea:focus{outline:2px solid var(--c);border-color:transparent}
+textarea{min-height:96px;resize:vertical}
+.chat{background:var(--pn);border:1px solid var(--ln);border-radius:16px;padding:24px}
+.chat small{display:block;font:12px var(--mono);color:var(--mu);letter-spacing:.06em;text-transform:uppercase;margin-bottom:16px}
+.bub{border:1px solid var(--c);border-radius:12px;padding:16px;white-space:pre-line;font-size:15.5px}
+.q .btn{width:100%;margin-top:24px}
+details{border-top:1px solid var(--ln);padding:24px 0}details:last-child{border-bottom:1px solid var(--ln)}
+summary{cursor:pointer;font-weight:600;font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--c);font-family:var(--mono)}details[open] summary::after{content:"–"}
+details p{color:var(--mu);margin-top:16px;max-width:560px}
+.two{display:grid;grid-template-columns:1fr 1.1fr;gap:64px;align-items:start}
+.map{border:1px solid var(--ln);border-radius:16px;overflow:hidden;height:360px;background:var(--pn)}
+.map iframe{width:100%;height:100%;border:0;filter:grayscale(1) invert(.92) contrast(.9)}
+.info p{color:var(--mu);margin:16px 0}.info b{display:block;font:400 12px var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--c)}
+.band{background:var(--c);color:#05070C;padding:72px 0}
+.band .w{display:flex;justify-content:space-between;align-items:center;gap:32px;flex-wrap:wrap}
+.band h2{margin:0;max-width:620px}.band .btn{background:#05070C;color:#fff}.band .btn:hover{background:#111827}
+footer{padding:40px 0 112px;color:var(--mu);font-size:13px}
+.bar2{position:fixed;left:16px;right:16px;bottom:16px;z-index:60;display:none}
+@media(max-width:960px){nav ul{display:none}.hero{padding:48px 0}.hero .w,.q,.two,.proc{grid-template-columns:1fr;gap:48px}.grid{grid-template-columns:1fr 1fr}.sv.w2,.sv.w4{grid-column:span 2}section{padding:64px 0}.bar2{display:block}.bar2 .btn{width:100%}}
+@media(max-width:560px){.grid{grid-template-columns:1fr}.sv.w2,.sv.w4{grid-column:auto}.nums{gap:24px}}
+
+body{counter-reset:sec}
+section .ey::before{counter-increment:sec;content:counter(sec,decimal-leading-zero) "  /  ";opacity:.7}
+.prog{position:fixed;left:0;top:0;height:3px;width:100%;background:var(--c);transform:scaleX(0);transform-origin:left;z-index:100}
+nav ul a{position:relative;padding:6px 0}
+nav ul a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.5px;background:var(--c);transform:scaleX(0);transform-origin:left;transition:transform .45s cubic-bezier(.16,1,.3,1)}
+nav ul a:hover::after{transform:scaleX(1)}
+.btn{position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .7s}
+.btn:hover::after{left:130%}
+.hero{position:relative;overflow:hidden;isolation:isolate}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(520px 360px at var(--mx,72%) var(--my,35%),rgba(53,198,244,.16),transparent 70%)}
+.grid-bg{position:absolute;inset:0;z-index:-2;background-image:linear-gradient(var(--ln) 1px,transparent 1px),linear-gradient(90deg,var(--ln) 1px,transparent 1px);background-size:64px 64px;opacity:.35;-webkit-mask-image:radial-gradient(ellipse at 70% 40%,#000 0,transparent 70%);mask-image:radial-gradient(ellipse at 70% 40%,#000 0,transparent 70%)}
+.mq{border-block:1px solid var(--ln);overflow:hidden;padding:18px 0;background:var(--pn)}
+.mq div{display:flex;gap:48px;width:max-content;font:600 14px var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--mu);white-space:nowrap;animation:mq 34s linear infinite}
+.mq span::before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--c);margin-right:48px;vertical-align:middle}
+@keyframes mq{to{transform:translateX(-50%)}}
+.sv{transition:transform .6s cubic-bezier(.16,1,.3,1),border-color .3s,box-shadow .6s}
+.sv:hover{transform:translateY(-6px);box-shadow:0 24px 48px -24px rgba(53,198,244,.35)}
+.scan{filter:drop-shadow(0 0 6px #35C6F4)}
+@media (prefers-reduced-motion:no-preference){
+@keyframes up{from{opacity:0;transform:translateY(28px)}to{opacity:1;transform:none}}
+@keyframes ex{from{translate:0 var(--f);opacity:0}30%{opacity:1}to{translate:0 0;opacity:1}}
+@keyframes bob{from{translate:0 -3px}to{translate:0 5px}}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+@keyframes sw{0%{translate:0 0;opacity:0}8%{opacity:.9}92%{opacity:.9}100%{translate:0 360px;opacity:0}}
+@keyframes ul{from{box-shadow:inset 0 0 0 var(--c)}to{box-shadow:inset 0 -.14em 0 var(--c)}}
+@keyframes drw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes tick{from{background:transparent;border-color:var(--ln)}to{background:var(--c);border-color:var(--c)}}
+@keyframes ring{0%{box-shadow:0 0 0 0 rgba(53,198,244,.55)}100%{box-shadow:0 0 0 12px rgba(53,198,244,0)}}
+@keyframes zoom{from{transform:scale(1.08)}to{transform:none}}
+.hero .art{animation:zoom 2.2s cubic-bezier(.16,1,.3,1) both}
+.hero .w>div:first-child>*{animation:up 1s cubic-bezier(.16,1,.3,1) both}
+.hero .w>div:first-child>:nth-child(2){animation-delay:.12s}.hero .w>div:first-child>:nth-child(3){animation-delay:.24s}.hero .w>div:first-child>:nth-child(4){animation-delay:.36s}.hero .w>div:first-child>:nth-child(5){animation-delay:.48s}
+h1 em{animation:ul 1s .9s cubic-bezier(.16,1,.3,1) both}
+.ex{animation:ex 1.5s cubic-bezier(.16,1,.3,1) both;animation-delay:var(--dl)}
+.bob{animation:bob 5s ease-in-out infinite alternate;animation-delay:var(--dl)}
+.cn{animation:fade .8s 1.6s both}
+.scan{animation:sw 4.2s 2.4s ease-in-out infinite}
+.anim [data-r]{opacity:0;transform:translateY(28px);transition:opacity .9s cubic-bezier(.16,1,.3,1),transform .9s cubic-bezier(.16,1,.3,1);transition-delay:var(--td,0s)}
+.anim [data-r].vis{opacity:1;transform:none}
+.anim .sv svg .dr{stroke-dasharray:1;stroke-dashoffset:1}
+.anim .sv.vis svg .dr{animation:drw 1.5s cubic-bezier(.16,1,.3,1) forwards;animation-delay:calc(var(--i)*70ms + .2s)}
+.anim .os .trk li i{background:transparent;border-color:var(--ln)}
+.anim .os.vis .trk li.ok i{animation:tick .35s forwards;animation-delay:calc(var(--k)*.5s + .3s)}
+.anim .os.vis .trk li.now i{border-color:var(--c);animation:ring 1.6s 2.2s infinite}
+}
+@media (prefers-reduced-motion:reduce){.mq div{animation:none}.scan{display:none}}
+</style>
+
+<div class="prog" id="pg"></div><div class="pv">PRÉVIA DE DEMONSTRAÇÃO · o site final leva as fotos e textos reais da loja</div>
+<nav><div class="w"><a class="logo" href="#"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="#35C6F4" stroke-width="2.5"/><path d="M2 16h28" stroke="#fff" stroke-width="2.5" stroke-linecap="square"/><circle cx="25" cy="16" r="2.6" fill="#05070C" stroke="#fff" stroke-width="2"/></svg>Mundo <b>Tech</b></a>
+<ul><li><a href="#servicos">Serviços</a></li><li><a href="#como">Como funciona</a></li><li><a href="#orcamento">Orçamento</a></li><li><a href="#faq">Dúvidas</a></li><li><a href="#contato">Contato</a></li></ul>
+<a class="btn sm" href="https://wa.me/5554996641844">WhatsApp</a></div></nav>
+
+<header class="hero"><div class="grid-bg" aria-hidden="true"></div><div class="w">
+<div>
+<span class="tag"><span class="dot" id="dot"></span><span id="st">Seg a sex, 9h às 19h</span></span>
+<h1>Seu aparelho volta a <em>funcionar</em>. Com orçamento antes.</h1>
+<p class="sub">Assistência técnica para celulares, tablets, videogames, PCs, notebooks, impressoras, TVs e redes. Em Caxias do Sul.</p>
+<div class="cta"><a class="btn" href="#orcamento">Pedir orçamento</a><a class="btn o" href="https://wa.me/5554996641844">Chamar no WhatsApp</a></div>
+<div class="nums"><div><b data-c="5,0">5,0</b><span>nota no Google</span></div><div><b data-c="28">28</b><span>avaliações</span></div><div><b>9h–19h</b><span>seg a sex</span></div></div>
+</div>
+<div class="art">
+<svg viewBox="0 0 480 470" role="img" aria-label="Ilustração de um celular desmontado em camadas: carcaça, bateria, placa e tela">
+<defs><style>.l{fill:#0B0F17;stroke:#fff;stroke-width:1.6}.k{fill:none;stroke:#fff;stroke-width:1.2;opacity:.55}.cy{fill:none;stroke:#35C6F4;stroke-width:1.6}.t{font:11px ui-monospace,Consolas,monospace;fill:#fff;letter-spacing:.08em}.d{stroke:#fff;stroke-width:1;stroke-dasharray:3 5;opacity:.35}</style></defs>
+<g class="cn"><path class="d" d="M100 108V398M340 108V398"/></g>
+<g class="ex" style="--f:-144px;--dl:.0s"><g class="bob" style="--dl:.0s"><g transform="translate(220 398) scale(1 .5) rotate(45)"><rect class="l" x="-55" y="-100" width="110" height="200" rx="16"/><circle class="k" cx="-25" cy="-70" r="9"/><circle class="k" cx="-25" cy="-42" r="9"/><circle class="k" cx="0" cy="0" r="14"/></g></g></g>
+<g class="ex" style="--f:-48px;--dl:.15s"><g class="bob" style="--dl:.15s"><g transform="translate(220 302) scale(1 .5) rotate(45)"><rect class="l" x="-55" y="-100" width="110" height="200" rx="16"/><rect x="-38" y="-62" width="76" height="124" rx="8" fill="rgba(53,198,244,.14)" stroke="#35C6F4" stroke-width="1.6"/><path class="cy" d="M-8 -6h16M0 -14v16"/></g></g></g>
+<g class="ex" style="--f:48px;--dl:.3s"><g class="bob" style="--dl:.3s"><g transform="translate(220 206) scale(1 .5) rotate(45)"><rect class="l" x="-55" y="-100" width="110" height="200" rx="16"/><rect class="cy" x="-36" y="-80" width="32" height="32" rx="4"/><rect class="cy" x="4" y="-60" width="28" height="28" rx="4"/><rect class="k" x="-30" y="-20" width="60" height="22" rx="4"/><path class="k" d="M-36 30h72M-36 44h50M-36 58h64M20 -80v14"/><circle class="cy" cx="-20" cy="78" r="6"/></g></g></g>
+<g class="ex" style="--f:144px;--dl:.45s"><g class="bob" style="--dl:.45s"><g transform="translate(220 110) scale(1 .5) rotate(45)"><rect class="l" x="-55" y="-100" width="110" height="200" rx="16" stroke="#35C6F4"/><rect class="k" x="-48" y="-93" width="96" height="186" rx="11"/><path d="M-30 -50L-6 -10L-22 6L10 54M-6 -10L24 -22M10 54L28 40" fill="none" stroke="#fff" stroke-width="1.3" opacity=".8"/><rect fill="#35C6F4" x="-14" y="-92" width="28" height="6" rx="3"/></g></g></g>
+<g class="cn"><path class="d" d="M352 110h16M352 206h16M352 302h16M352 398h16" opacity=".6"/><text class="t" x="374" y="114">TELA</text><text class="t" x="374" y="210">PLACA</text><text class="t" x="374" y="306">BATERIA</text><text class="t" x="374" y="402">CARCAÇA</text></g>
+<rect class="scan" x="96" y="46" width="248" height="2" rx="1" fill="#35C6F4"/></svg>
+<small>Ilustração: um celular desmontado, camada por camada</small>
+</div>
+</div></header>
+
+<div class="mq" aria-hidden="true"><div><span>Celulares</span><span>Tablets</span><span>Videogames</span><span>PCs e notebooks</span><span>Impressoras</span><span>TVs</span><span>Redes e servidores</span><span>Acessórios</span><span>Celulares</span><span>Tablets</span><span>Videogames</span><span>PCs e notebooks</span><span>Impressoras</span><span>TVs</span><span>Redes e servidores</span><span>Acessórios</span></div></div>
+<section id="servicos"><div class="w">
+<span class="ey">Serviços</span><h2>Tudo que tem tela e circuito</h2>
+<p class="lead">Conforme o atendimento informado pela Mundo Tech. Valores e prazos são combinados no orçamento.</p>
+<div class="grid">
+<div class="sv w2"><svg viewBox="0 0 320 150" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="60" y="20" width="62" height="110" rx="10"/><rect x="132" y="34" width="62" height="96" rx="10" opacity=".55"/><path stroke="#35C6F4" d="M72 36l16 22-10 12 14 20M88 58l16-6"/><path d="M92 120h6M164 120h6" opacity=".6"/><path stroke="#35C6F4" d="M226 112l36-36 8 8-36 36-12 4zM262 76l6-6 8 8-6 6"/></g></svg><div><span>01</span><h3>Celulares e tablets</h3><p>Assistência técnica especializada.</p></div></div>
+<div class="sv"><svg viewBox="0 0 160 120" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M34 40h92a16 16 0 0 1 16 16v14a16 16 0 0 1-28 10l-6-8H52l-6 8a16 16 0 0 1-28-10V56a16 16 0 0 1 16-16z"/><path stroke="#35C6F4" d="M52 58h16M60 50v16"/><circle cx="104" cy="52" r="3"/><circle cx="116" cy="62" r="3"/><circle cx="92" cy="62" r="3" opacity=".5"/></g></svg><div><span>02</span><h3>Videogames</h3><p>Reparo e manutenção.</p></div></div>
+<div class="sv"><svg viewBox="0 0 160 120" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="34" y="22" width="92" height="60" rx="6"/><path d="M20 96h120l-8-14H28z"/><path stroke="#35C6F4" d="M50 40l-8 12 8 12M110 40l8 12-8 12M88 38l-14 28"/></g></svg><div><span>03</span><h3>PCs e notebooks</h3><p>Diagnóstico e reparo.</p></div></div>
+<div class="sv"><svg viewBox="0 0 160 120" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M48 44V24h64v20"/><rect x="28" y="44" width="104" height="38" rx="8"/><path d="M48 70h64v28H48z"/><path stroke="#35C6F4" d="M58 80h44M58 88h30"/><circle cx="116" cy="56" r="2.5" fill="#35C6F4" stroke="none"/></g></svg><div><span>04</span><h3>Impressoras</h3><p>Manutenção e suporte.</p></div></div>
+<div class="sv"><svg viewBox="0 0 160 120" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="26" y="22" width="108" height="66" rx="6"/><path d="M60 102h40M80 88v14"/><path stroke="#35C6F4" d="M62 62q18-18 36 0M70 70q10-9 20 0"/><circle cx="80" cy="76" r="2" fill="#35C6F4" stroke="none"/></g></svg><div><span>05</span><h3>TVs</h3><p>Avaliação e conserto.</p></div></div>
+<div class="sv w2"><svg viewBox="0 0 320 150" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="70" y="84" width="180" height="40" rx="8"/><path d="M96 84V50M224 84V50"/><circle cx="96" cy="46" r="4"/><circle cx="224" cy="46" r="4"/><circle cx="100" cy="104" r="3" fill="#35C6F4" stroke="none"/><circle cx="116" cy="104" r="3" fill="#35C6F4" stroke="none"/><circle cx="132" cy="104" r="3" opacity=".5"/><path stroke="#35C6F4" d="M130 34q30-26 60 0M142 46q18-14 36 0"/><path d="M200 104h38" opacity=".6"/></g></svg><div><span>06</span><h3>Redes e servidores</h3><p>Instalação e suporte.</p></div></div>
+<div class="sv w4"><svg viewBox="0 0 320 150" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="60" y="44" width="46" height="56" rx="8"/><path d="M106 62h14v20h-14M70 44V34M96 44V34"/><path stroke="#35C6F4" d="M120 72c40 0 40 30 80 30h24"/><rect x="224" y="94" width="26" height="16" rx="3"/><path d="M250 102h12"/><circle cx="282" cy="56" r="10"/><circle cx="302" cy="56" r="10"/><path d="M292 66l-4 22q-4 12-16 12" opacity=".7"/></g></svg><div><span>07</span><h3>Acessórios</h3><p>Linha completa para celulares e notebooks.</p></div></div>
+</div></div></section>
+
+<section id="como"><div class="w">
+<span class="ey">Como funciona</span><h2>Três passos, nenhuma surpresa</h2>
+<div class="proc">
+<div class="steps">
+<div class="st"><span>01</span><h3>Conte o defeito</h3><p>Pelo formulário ou direto no WhatsApp, com o aparelho e o que está acontecendo.</p></div>
+<div class="st"><span>02</span><h3>Receba o orçamento</h3><p>Valor e prazo combinados antes de começar o serviço.</p></div>
+<div class="st"><span>03</span><h3>Retire o aparelho</h3><p>Avisamos assim que estiver pronto.</p></div>
+</div>
+<aside class="os" aria-label="Exemplo de ordem de serviço"><header><span>Ordem de serviço</span><span>nº 0001</span></header>
+<dl><dt>Aparelho</dt><dd>Celular</dd><dt>Defeito</dt><dd>Tela quebrada</dd><dt>Orçamento</dt><dd>Aprovado</dd></dl>
+<ul class="trk"><li class="ok"><i></i>Recebido</li><li class="ok"><i></i>Diagnóstico</li><li class="ok"><i></i>Orçamento aprovado</li><li class="now"><i></i>Pronto para retirar</li></ul>
+<small>EXEMPLO ILUSTRATIVO DE COMO O CLIENTE ACOMPANHA</small></aside>
+</div></div></section>
+
+<section id="orcamento"><div class="w">
+<span class="ey">Orçamento</span><h2>Monte a mensagem em 30 segundos</h2>
+<p class="lead">Escolha o aparelho e conte o defeito. O WhatsApp abre com tudo pronto.</p>
+<div class="q"><div>
+<label for="ap">Aparelho</label><select id="ap"><option>Celular</option><option>Tablet</option><option>Videogame</option><option>PC ou notebook</option><option>Impressora</option><option>TV</option><option>Rede ou servidor</option><option>Outro</option></select>
+<label for="md">Marca e modelo</label><input id="md" placeholder="Ex.: Samsung A54">
+<label for="df">O que está acontecendo</label><textarea id="df" placeholder="Ex.: a tela quebrou e não carrega"></textarea></div>
+<div><div class="chat"><small>Prévia da mensagem</small><div class="bub" id="bub"></div></div><a class="btn" id="go" href="#">Enviar pelo WhatsApp</a></div></div>
+</div></section>
+
+<section id="faq"><div class="w two">
+<div><span class="ey">Dúvidas</span><h2>Perguntas frequentes</h2><p class="lead">Respostas de exemplo. Ajustamos com as informações reais da loja.</p></div>
+<div><details open><summary>Qual o horário de atendimento?</summary><p>De segunda a sexta, das 9h às 19h, sem fechar ao meio-dia.</p></details>
+<details><summary>Como peço um orçamento?</summary><p>Pelo formulário nesta página ou direto no WhatsApp, dizendo o aparelho e o defeito.</p></details>
+<details><summary>Vocês vendem acessórios?</summary><p>Sim, há uma linha completa para celulares e notebooks.</p></details>
+<details><summary>Atendem TV, impressora e redes?</summary><p>Sim, além de celulares, tablets, videogames, PCs e notebooks.</p></details></div>
+</div></section>
+
+<section id="contato"><div class="w two">
+<div class="info"><span class="ey">Contato</span><h2>Venha nos visitar</h2>
+<p><b>Endereço</b>R. Alfredo Chaves, 1440, sala 05, Exposição<br>Caxias do Sul, RS</p>
+<p><b>WhatsApp e telefone</b>(54) 99664-1844</p><p><b>Horário</b>Segunda a sexta, das 9h às 19h</p></div>
+<div class="map"><iframe title="Mapa" loading="lazy" src="https://www.google.com/maps?q=R.+Alfredo+Chaves,+1440,+Caxias+do+Sul+RS&output=embed"></iframe></div>
+</div></section>
+
+<div class="band"><div class="w"><h2>Fale com a Mundo Tech e receba o orçamento antes de começar.</h2><a class="btn" href="https://wa.me/5554996641844">Chamar agora</a></div></div>
+<footer><div class="w">Prévia de demonstração feita por Eduardo com informações públicas do Google e da mensagem de atendimento da Mundo Tech (nome, endereço, telefone, nota, horário e serviços). Não é o site oficial da loja. As ilustrações são genéricas; fotos e textos finais vêm da loja.</div></footer>
+<div class="bar2"><a class="btn" href="https://wa.me/5554996641844">Chamar no WhatsApp</a></div>
+
+<script>
+var $=function(i){return document.getElementById(i)};
+function msg(){return "Olá! Quero um orçamento.\nAparelho: "+$("ap").value+"\nModelo: "+($("md").value||"(informo aqui)")+"\nProblema: "+($("df").value||"(descrevo aqui)")}
+function up(){$("bub").textContent=msg();$("go").href="https://wa.me/5554996641844?text="+encodeURIComponent(msg())}
+["ap","md","df"].forEach(function(i){$(i).addEventListener("input",up)});up();
+(function(){var d=new Date(),h=d.getHours()+d.getMinutes()/60,w=d.getDay(),on=w>=1&&w<=5&&h>=9&&h<19;$("dot").className="dot"+(on?" on":"");$("st").textContent=on?"Aberto agora · até as 19h":"Seg a sex, 9h às 19h"})();
+
+(function(){
+var ok=!matchMedia("(prefers-reduced-motion: reduce)").matches&&"IntersectionObserver" in window;
+var pg=document.getElementById("pg");
+addEventListener("scroll",function(){var h=document.documentElement;pg.style.transform="scaleX("+(h.scrollTop/(h.scrollHeight-h.clientHeight||1))+")"},{passive:true});
+var hero=document.querySelector(".hero");
+hero.addEventListener("pointermove",function(e){var r=hero.getBoundingClientRect();hero.style.setProperty("--mx",(e.clientX-r.left)+"px");hero.style.setProperty("--my",(e.clientY-r.top)+"px")});
+if(!ok)return;
+document.documentElement.classList.add("anim");
+[["section h2"],["section .lead"],[".sv"],[".st"],[".os"],[".q > div"],[".chat"],["details"],[".info"],[".map"],[".band .w"]].forEach(function(q){document.querySelectorAll(q[0]).forEach(function(el,i){el.setAttribute("data-r","");el.style.setProperty("--td",((i%4)*0.09)+"s")})});
+document.querySelectorAll(".sv svg").forEach(function(sv){var n=0;sv.querySelectorAll("path,rect,circle").forEach(function(p){if(p.getAttribute("fill")==="#35C6F4")return;p.setAttribute("pathLength","1");p.classList.add("dr");p.style.setProperty("--i",n++)})});
+document.querySelectorAll(".os .trk li").forEach(function(li,i){li.style.setProperty("--k",i)});
+function count(el){var t=el.getAttribute("data-c"),dec=t.indexOf(",")>-1,n=parseFloat(t.replace(",",".")),t0=null;
+function step(ts){if(!t0)t0=ts;var f=Math.min(1,(ts-t0)/1200),v=n*(1-Math.pow(1-f,3));el.textContent=dec?v.toFixed(1).replace(".",","):Math.round(v);if(f<1)requestAnimationFrame(step);else el.textContent=t}
+requestAnimationFrame(step)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;e.target.classList.add("vis");io.unobserve(e.target)})},{rootMargin:"0px 0px -8% 0px",threshold:.08});
+document.querySelectorAll("[data-r]").forEach(function(el){io.observe(el)});
+var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);co.unobserve(e.target)}})},{threshold:.6});
+document.querySelectorAll("[data-c]").forEach(function(el){co.observe(el)});
+})();
+</script>
+</html>
