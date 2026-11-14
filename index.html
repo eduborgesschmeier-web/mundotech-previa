@@ -3,8 +3,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Mundo Tech | Assistência técnica em Caxias do Sul (prévia)</title>
-<meta name="description" content="Prévia de site para a Mundo Tech, assistência técnica em Caxias do Sul.">
+<meta property="og:type" content="website"><meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Mundo Tech | Assistência técnica em Caxias do Sul">
+<meta property="og:description" content="Celulares, tablets, videogames, PCs, notebooks, impressoras, TVs e redes. Orçamento antes de começar. Nota 5,0 no Google.">
+<meta property="og:image" content="assets/img/og.jpg"><meta name="twitter:card" content="summary_large_image">
+<title>Mundo Tech | Assistência técnica em Caxias do Sul</title>
+<meta name="description" content="Assistência técnica para celulares, tablets, videogames, PCs, notebooks, impressoras, TVs e redes em Caxias do Sul. Nota 5,0 no Google. Orçamento pelo WhatsApp.">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Mundo Tech", "telephone": "+55 54 99664-1844", "description": "Assistência técnica para celulares, tablets, videogames, PCs, notebooks, impressoras, TVs e redes.", "address": {"@type": "PostalAddress", "streetAddress": "R. Alfredo Chaves, 1440, sala 05, Exposição", "addressLocality": "Caxias do Sul", "addressRegion": "RS", "addressCountry": "BR"}, "openingHoursSpecification": [{"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "09:00", "closes": "19:00"}]}</script>
 <meta name="theme-color" content="#05070C">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%2305070C'/%3E%3Ccircle cx='16' cy='16' r='9' fill='none' stroke='%2335C6F4' stroke-width='2.5'/%3E%3Cpath d='M3 16h26' stroke='%23fff' stroke-width='2.5'/%3E%3C/svg%3E">
 <style>
@@ -134,12 +139,39 @@ h1 em{animation:ul 1s .9s cubic-bezier(.16,1,.3,1) both}
 .anim .os.vis .trk li.now i{border-color:var(--c);animation:ring 1.6s 2.2s infinite}
 }
 @media (prefers-reduced-motion:reduce){.mq div{animation:none}.scan{display:none}}
+
+.logo-img{height:42px;width:auto;border-radius:50%}
+.art{position:relative}
+.hero-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;border-radius:20px}
+.art.tem-foto .legenda{position:relative;z-index:1;background:rgba(5,7,12,.7);backdrop-filter:blur(6px);border-radius:8px;margin:0 8px 8px;padding:8px 12px;display:none}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.gal figure{margin:0;border-radius:16px;overflow:hidden;border:1px solid var(--ln);background:var(--pn);cursor:zoom-in;aspect-ratio:4/3}
+.gal figure:first-child{grid-column:span 2;grid-row:span 2;aspect-ratio:auto}
+.gal img{width:100%;height:100%;object-fit:cover;display:block;transition:transform 1.2s cubic-bezier(.16,1,.3,1)}
+.gal figure:hover img{transform:scale(1.05)}
+.fachada{width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:16px;border:1px solid var(--ln);margin-bottom:16px}
+.lb{position:fixed;inset:0;z-index:200;background:rgba(5,7,12,.94);display:grid;place-items:center;padding:24px}
+.lb[hidden]{display:none}.lb img{max-width:100%;max-height:100%;border-radius:12px}
+.lb button{position:absolute;top:16px;right:20px;background:none;border:0;color:#fff;font-size:40px;cursor:pointer;line-height:1}
+.gal[data-n="1"]{grid-template-columns:1fr}.gal[data-n="1"] figure:first-child{grid-column:auto;grid-row:auto;aspect-ratio:16/9}
+.gal[data-n="2"],.gal[data-n="4"]{grid-template-columns:1fr 1fr}.gal[data-n="2"] figure:first-child,.gal[data-n="4"] figure:first-child{grid-column:auto;grid-row:auto;aspect-ratio:4/3}
+.gal[data-n="5"] figure:last-child{grid-column:span 2}
+@media(max-width:700px){.gal{grid-template-columns:1fr 1fr}.gal figure:first-child{grid-column:span 2;grid-row:auto;aspect-ratio:4/3}}
+
+.skip{position:absolute;left:-999px;top:8px;background:var(--c);color:#05070C;padding:10px 14px;border-radius:8px;z-index:300;font-weight:700}.skip:focus{left:8px}
+:focus-visible{outline:2px solid var(--c);outline-offset:3px;border-radius:6px}
+.logo{min-height:44px}
+summary{min-height:44px;align-items:center}
+.mb{display:none;background:none;border:1px solid var(--ln);color:#fff;border-radius:10px;width:44px;height:44px;font-size:20px;cursor:pointer}
+@media(max-width:960px){.mb{display:inline-grid;place-items:center}
+nav ul.open{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:#05070C;border-bottom:1px solid var(--ln);padding:8px 24px 16px}
+nav ul.open a{display:block;padding:14px 0;font-size:17px;color:#fff}}
 </style>
 
 <div class="prog" id="pg"></div><div class="pv">PRÉVIA DE DEMONSTRAÇÃO · o site final leva as fotos e textos reais da loja</div>
-<nav><div class="w"><a class="logo" href="#"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="#35C6F4" stroke-width="2.5"/><path d="M2 16h28" stroke="#fff" stroke-width="2.5" stroke-linecap="square"/><circle cx="25" cy="16" r="2.6" fill="#05070C" stroke="#fff" stroke-width="2"/></svg>Mundo <b>Tech</b></a>
+<a class="skip" href="#servicos">Pular para o conteúdo</a><nav><div class="w"><a class="logo" href="#"><img class="logo-img" src="assets/img/logo.png" alt="" hidden onload="this.hidden=false;this.nextElementSibling.style.display='none'" onerror="this.remove()"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="9" fill="none" stroke="#35C6F4" stroke-width="2.5"/><path d="M2 16h28" stroke="#fff" stroke-width="2.5" stroke-linecap="square"/><circle cx="25" cy="16" r="2.6" fill="#05070C" stroke="#fff" stroke-width="2"/></svg>Mundo <b>Tech</b></a>
 <ul><li><a href="#servicos">Serviços</a></li><li><a href="#como">Como funciona</a></li><li><a href="#orcamento">Orçamento</a></li><li><a href="#faq">Dúvidas</a></li><li><a href="#contato">Contato</a></li></ul>
-<a class="btn sm" href="https://wa.me/5554996641844">WhatsApp</a></div></nav>
+<button class="mb" type="button" aria-label="Abrir menu" aria-expanded="false">&#9776;</button><a class="btn sm" href="https://wa.me/5554996641844">WhatsApp</a></div></nav>
 
 <header class="hero"><div class="grid-bg" aria-hidden="true"></div><div class="w">
 <div>
@@ -159,7 +191,8 @@ h1 em{animation:ul 1s .9s cubic-bezier(.16,1,.3,1) both}
 <g class="ex" style="--f:144px;--dl:.45s"><g class="bob" style="--dl:.45s"><g transform="translate(220 110) scale(1 .5) rotate(45)"><rect class="l" x="-55" y="-100" width="110" height="200" rx="16" stroke="#35C6F4"/><rect class="k" x="-48" y="-93" width="96" height="186" rx="11"/><path d="M-30 -50L-6 -10L-22 6L10 54M-6 -10L24 -22M10 54L28 40" fill="none" stroke="#fff" stroke-width="1.3" opacity=".8"/><rect fill="#35C6F4" x="-14" y="-92" width="28" height="6" rx="3"/></g></g></g>
 <g class="cn"><path class="d" d="M352 110h16M352 206h16M352 302h16M352 398h16" opacity=".6"/><text class="t" x="374" y="114">TELA</text><text class="t" x="374" y="210">PLACA</text><text class="t" x="374" y="306">BATERIA</text><text class="t" x="374" y="402">CARCAÇA</text></g>
 <rect class="scan" x="96" y="46" width="248" height="2" rx="1" fill="#35C6F4"/></svg>
-<small>Ilustração: um celular desmontado, camada por camada</small>
+<img class="hero-photo" src="assets/img/hero.webp" alt="Bancada de assistência técnica da Mundo Tech" fetchpriority="high" onerror="this.remove()" onload="this.parentElement.classList.add('tem-foto')">
+<small class="legenda">Ilustração: um celular desmontado, camada por camada</small>
 </div>
 </div></header>
 
@@ -177,6 +210,18 @@ h1 em{animation:ul 1s .9s cubic-bezier(.16,1,.3,1) both}
 <div class="sv w4"><svg viewBox="0 0 320 150" aria-hidden="true"><g fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="60" y="44" width="46" height="56" rx="8"/><path d="M106 62h14v20h-14M70 44V34M96 44V34"/><path stroke="#35C6F4" d="M120 72c40 0 40 30 80 30h24"/><rect x="224" y="94" width="26" height="16" rx="3"/><path d="M250 102h12"/><circle cx="282" cy="56" r="10"/><circle cx="302" cy="56" r="10"/><path d="M292 66l-4 22q-4 12-16 12" opacity=".7"/></g></svg><div><span>07</span><h3>Acessórios</h3><p>Linha completa para celulares e notebooks.</p></div></div>
 </div></div></section>
 
+
+<section id="galeria" hidden><div class="w">
+<span class="ey">A loja</span><h2>Por dentro da Mundo Tech</h2>
+<div class="gal" id="gal">
+<figure data-img="galeria-1.webp"><img alt="Foto 1 da Mundo Tech" loading="lazy"></figure>
+<figure data-img="galeria-2.webp"><img alt="Foto 2 da Mundo Tech" loading="lazy"></figure>
+<figure data-img="galeria-3.webp"><img alt="Foto 3 da Mundo Tech" loading="lazy"></figure>
+<figure data-img="galeria-4.webp"><img alt="Foto 4 da Mundo Tech" loading="lazy"></figure>
+<figure data-img="galeria-5.webp"><img alt="Foto 5 da Mundo Tech" loading="lazy"></figure>
+<figure data-img="galeria-6.webp"><img alt="Foto 6 da Mundo Tech" loading="lazy"></figure>
+</div></div></section>
+<div class="lb" id="lb" hidden><button type="button" aria-label="Fechar">×</button><img alt=""></div>
 <section id="como"><div class="w">
 <span class="ey">Como funciona</span><h2>Três passos, nenhuma surpresa</h2>
 <div class="proc">
@@ -213,7 +258,7 @@ h1 em{animation:ul 1s .9s cubic-bezier(.16,1,.3,1) both}
 <div class="info"><span class="ey">Contato</span><h2>Venha nos visitar</h2>
 <p><b>Endereço</b>R. Alfredo Chaves, 1440, sala 05, Exposição<br>Caxias do Sul, RS</p>
 <p><b>WhatsApp e telefone</b>(54) 99664-1844</p><p><b>Horário</b>Segunda a sexta, das 9h às 19h</p></div>
-<div class="map"><iframe title="Mapa" loading="lazy" src="https://www.google.com/maps?q=R.+Alfredo+Chaves,+1440,+Caxias+do+Sul+RS&output=embed"></iframe></div>
+<div><img class="fachada" src="assets/img/fachada.webp" alt="Fachada da Mundo Tech" loading="lazy" onerror="this.remove()"><div class="map"><iframe title="Mapa" loading="lazy" src="https://www.google.com/maps?q=R.+Alfredo+Chaves,+1440,+Caxias+do+Sul+RS&output=embed"></iframe></div></div>
 </div></section>
 
 <div class="band"><div class="w"><h2>Fale com a Mundo Tech e receba o orçamento antes de começar.</h2><a class="btn" href="https://wa.me/5554996641844">Chamar agora</a></div></div>
@@ -246,5 +291,19 @@ document.querySelectorAll("[data-r]").forEach(function(el){io.observe(el)});
 var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);co.unobserve(e.target)}})},{threshold:.6});
 document.querySelectorAll("[data-c]").forEach(function(el){co.observe(el)});
 })();
+
+(function(){
+var figs=[].slice.call(document.querySelectorAll("#gal figure")),ok=0,total=figs.length,done=0,sec=document.getElementById("galeria");
+figs.forEach(function(f){var im=new Image();im.onload=function(){f.querySelector("img").src=im.src;ok++;fim()};im.onerror=function(){f.remove();fim()};im.src="assets/img/"+f.getAttribute("data-img")});
+function fim(){done++;if(done<total)return;if(ok){document.getElementById("gal").setAttribute("data-n",ok);sec.hidden=false;var nv=document.querySelector("nav ul");if(nv){var li=document.createElement("li");li.innerHTML='<a href="#galeria">A loja</a>';nv.insertBefore(li,nv.children[1])}}}
+var lb=document.getElementById("lb");
+document.getElementById("gal").addEventListener("click",function(e){var f=e.target.closest("figure");if(!f)return;lb.querySelector("img").src=f.querySelector("img").src;lb.hidden=false});
+lb.addEventListener("click",function(){lb.hidden=true});
+addEventListener("keydown",function(e){if(e.key==="Escape")lb.hidden=true});
+})();
+
+(function(){var b=document.querySelector(".mb"),u=document.querySelector("nav ul");if(!b||!u)return;
+b.addEventListener("click",function(){var o=u.classList.toggle("open");b.setAttribute("aria-expanded",o)});
+u.addEventListener("click",function(e){if(e.target.closest("a")){u.classList.remove("open");b.setAttribute("aria-expanded","false")}});})();
 </script>
 </html>
