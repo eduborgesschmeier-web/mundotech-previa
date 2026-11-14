@@ -305,14 +305,14 @@ p{margin:0}
 }
 @media (prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
-  *,*::before,*::after{animation:none!important;transition:none!important}
+  *:not(.rev-track),*::before,*::after{animation:none!important;transition:none!important}
   .js .rv{opacity:1;transform:none}
 }
 @media(max-width:560px){.label{letter-spacing:.12em}}
 
 .rev-head{max-width:760px}
 .rev-viewport{position:relative;overflow:hidden;margin-top:40px;padding:6px 0 10px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
-.rev-track{list-style:none;margin:0;padding:0 0 0 24px;display:flex;gap:18px;width:max-content;animation:rev 110s linear infinite}
+.rev-track{animation-play-state:running;list-style:none;margin:0;padding:0 0 0 24px;display:flex;gap:18px;width:max-content;animation:rev 110s linear infinite}
 .rev-viewport:hover .rev-track,.rev-viewport:focus-within .rev-track{animation-play-state:paused}
 @keyframes rev{to{transform:translateX(-50%)}}
 .rev-card{width:340px;flex:none;background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:24px 24px 20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 14px 34px -26px rgba(11,18,32,.4)}
@@ -322,7 +322,8 @@ p{margin:0}
 .rev-who strong{font-weight:600}.rev-who span{color:var(--muted);font:500 11px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase}
 .rev-foot{margin-top:26px}
 @media(max-width:760px){.rev-card{width:280px;padding:20px}.rev-card blockquote{font-size:17px}}
-@media (prefers-reduced-motion:reduce){.rev-viewport{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-mask-image:none;mask-image:none}.rev-track{animation:none}.rev-card{scroll-snap-align:start}}
+.rev-viewport{scrollbar-width:none}.rev-viewport::-webkit-scrollbar{display:none}
+@media (prefers-reduced-motion:reduce){.rev-track{animation-duration:160s}}
 </style>
 </head>
 <body>
@@ -801,7 +802,7 @@ p{margin:0}
 })();
 </script>
 <script>
-(function(){var t=document.querySelector(".rev-track");if(!t||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+(function(){var t=document.querySelector(".rev-track");if(!t)return;
 [].slice.call(t.children).forEach(function(li){var c=li.cloneNode(true);c.setAttribute("aria-hidden","true");t.appendChild(c)});})();
 </script>
 </body>
