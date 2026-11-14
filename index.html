@@ -309,6 +309,20 @@ p{margin:0}
   .js .rv{opacity:1;transform:none}
 }
 @media(max-width:560px){.label{letter-spacing:.12em}}
+
+.rev-head{max-width:760px}
+.rev-viewport{position:relative;overflow:hidden;margin-top:40px;padding:6px 0 10px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.rev-track{list-style:none;margin:0;padding:0 0 0 24px;display:flex;gap:18px;width:max-content;animation:rev 110s linear infinite}
+.rev-viewport:hover .rev-track,.rev-viewport:focus-within .rev-track{animation-play-state:paused}
+@keyframes rev{to{transform:translateX(-50%)}}
+.rev-card{width:340px;flex:none;background:#fff;border:1.5px solid var(--line);border-radius:18px;padding:24px 24px 20px;display:flex;flex-direction:column;gap:14px;box-shadow:0 14px 34px -26px rgba(11,18,32,.4)}
+.rev-stars{display:flex;gap:3px;color:#F5B301}.rev-stars svg{width:16px;height:16px}
+.rev-card blockquote{margin:0;font:400 19px/1.4 var(--serif);color:var(--ink);letter-spacing:-.005em}
+.rev-who{margin:auto 0 0;display:flex;flex-direction:column;gap:2px;font-size:14px}
+.rev-who strong{font-weight:600}.rev-who span{color:var(--muted);font:500 11px/1.4 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.rev-foot{margin-top:26px}
+@media(max-width:760px){.rev-card{width:280px;padding:20px}.rev-card blockquote{font-size:17px}}
+@media (prefers-reduced-motion:reduce){.rev-viewport{overflow-x:auto;scroll-snap-type:x mandatory;-webkit-mask-image:none;mask-image:none}.rev-track{animation:none}.rev-card{scroll-snap-align:start}}
 </style>
 </head>
 <body>
@@ -439,7 +453,22 @@ p{margin:0}
     </div>
   </section>
 
-  <section class="sec alt" id="orcamento" aria-labelledby="t-orc">
+
+  <section class="sec alt" id="avaliacoes" aria-labelledby="t-aval">
+    <div class="wrap">
+      <div class="sec-head rev-head">
+        <p class="label rv">Avaliações no Google</p>
+        <h2 id="t-aval" class="rv d1">Quem já trouxe o aparelho <span class="mark">recomenda.</span></h2>
+        <p class="rv d2">Nota 5,0 com 28 avaliações. Abaixo, algumas delas, com as palavras de cada cliente.</p>
+      </div>
+    </div>
+    <div class="rev-viewport rv d2" tabindex="0" aria-label="Avaliações de clientes, role para ver mais">
+      <ul class="rev-track"><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Troquei a tela e a bateria do celular com o Tiago da Mundo Tech e o serviço ficou top! Atendimento rápido, preço justo e de qualidade! Recomendo muito aqui em Caxias!!”</blockquote><p class="rev-who"><strong>Maicon M.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Excelente experiência! Atendimento impecável, ambiente agradável e produtos de ótima qualidade.Tudo feito com profissionalismo. Recomendo e voltarei!”</blockquote><p class="rev-who"><strong>Marina C.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Excelente atendimento troquei a tela rápido e perfeito nem parece foi trocado a tela super indico”</blockquote><p class="rev-who"><strong>Arnilda B.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Arrumou meu notebook e ficou excelente super indico”</blockquote><p class="rev-who"><strong>Guilherme</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Ótimo atendimento. Ótimo serviço e rapidez. Super recomendo”</blockquote><p class="rev-who"><strong>Isa S.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Excelente atendimento preço justo rápido e ficou perfeito”</blockquote><p class="rev-who"><strong>Simone F.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Muito bem atendido rápido e conforme combinado”</blockquote><p class="rev-who"><strong>Neida D.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Excelente atendimento rapidez e serviço perfeito super indico”</blockquote><p class="rev-who"><strong>Paulo S.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“top!! produtos top e atendimento impecável”</blockquote><p class="rev-who"><strong>Taise W.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Excelente atendimento serviço rápido e profissional”</blockquote><p class="rev-who"><strong>Fernanda B.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“Troquei meu celular super indico preço justo e perfeito”</blockquote><p class="rev-who"><strong>Alex C.</strong><span>Avaliação no Google</span></p></li><li class="rev-card"><div class="rev-stars" role="img" aria-label="Cinco estrelas"><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg><svg aria-hidden="true"><use href="#i-star"/></svg></div><blockquote>“excelente atendimento preço justo pode confiar”</blockquote><p class="rev-who"><strong>Gabrielle D.</strong><span>Avaliação no Google</span></p></li></ul>
+    </div>
+    <div class="wrap rev-foot"><a class="link-mono" href="https://www.google.com/maps/search/?api=1&amp;query=MUNDO+TECH+R.+Alfredo+Chaves+1440+Caxias+do+Sul" target="_blank" rel="noopener">Ver todas as avaliações no Google ↗</a></div>
+  </section>
+
+  <section class="sec" id="orcamento" aria-labelledby="t-orc">
     <div class="wrap">
       <div class="sec-head">
         <p class="label rv">Orçamento pelo WhatsApp</p>
@@ -481,7 +510,7 @@ p{margin:0}
     </div>
   </section>
 
-  <section class="sec" id="duvidas" aria-labelledby="t-duvidas">
+  <section class="sec alt" id="duvidas" aria-labelledby="t-duvidas">
     <div class="wrap">
       <div class="sec-head">
         <p class="label rv">Dúvidas frequentes</p>
@@ -508,7 +537,7 @@ p{margin:0}
     </div>
   </section>
 
-  <section class="sec alt" id="visite" aria-labelledby="t-visite">
+  <section class="sec" id="visite" aria-labelledby="t-visite">
     <div class="wrap">
       <div class="sec-head">
         <p class="label rv">Onde estamos</p>
@@ -770,6 +799,10 @@ p{margin:0}
     rv.forEach(function (e) { io.observe(e); });
   }
 })();
+</script>
+<script>
+(function(){var t=document.querySelector(".rev-track");if(!t||matchMedia("(prefers-reduced-motion: reduce)").matches)return;
+[].slice.call(t.children).forEach(function(li){var c=li.cloneNode(true);c.setAttribute("aria-hidden","true");t.appendChild(c)});})();
 </script>
 </body>
 </html>
